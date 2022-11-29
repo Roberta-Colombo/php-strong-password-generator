@@ -1,0 +1,47 @@
+.wrapper {
+    background-color: darkblue;
+    height: 100vh;
+}
+
+h1 {
+    padding-top: 50px;
+    color: rgb(166, 166, 234);
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.container {
+    background-color: #ffffff;
+    height: 50%;
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px 40px;
+}
+
+button {
+    border: 2px solid darkblue;
+    background-color: darkblue;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 8px 15px;
+}
+
+h3 {
+    color: darkblue;
+    padding-top: 40px;
+}
+
+.text {
+    color: rgb(69, 67, 67);
+    padding-top: 40px;
+    font-size: 2rem;
+}
+
+.margin-top {
+margin-top: 50px;
+}
