@@ -4,17 +4,14 @@
 // $numbers = '0123456789';
 // $symbols = '!$%&/()=?*+-#';
 
+include __DIR__ . '/functions/functions.php';
+
 $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()';
 $password = '';
 $n = 1;
 
 if (isset($_GET['pw-length'])) {
-    $pwLength = $_GET['pw-length'];
-    do {
-        $randomChar = $characters[rand(0, strlen($characters) - 1)];
-        echo $randomChar;
-        $n++;
-    } while ($n <= $pwLength);
+    $password = createPassword();
 }
 
 ?>
