@@ -1,5 +1,7 @@
 <?php
-function createPassword()
+session_start();
+
+function createPassword($pwLength)
 {
     $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()';
     $n = 1;
@@ -8,9 +10,10 @@ function createPassword()
         $pwLength = $_GET['pw-length'];
         do {
             $randomChar = $characters[rand(0, strlen($characters) - 1)];
-            echo $randomChar;
             $n++;
+            $password .= $randomChar;
         } while ($n <= $pwLength);
     }
-    return $password;
+    $_SESSION['newPassword'] = $password;
+    header('Location: ./result.php');
 }

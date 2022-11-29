@@ -11,9 +11,8 @@ $password = '';
 $n = 1;
 
 if (isset($_GET['pw-length'])) {
-    $password = createPassword();
+    $password = createPassword($_GET['pw-length']);
 }
-
 ?>
 
 
